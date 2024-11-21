@@ -1,0 +1,200 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+   background-color:blanchedalmond;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #140101;
+    
+}
+
+/* Navigation Bar */
+nav {
+    background-color:brown;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(244, 242, 242, 0.5);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav li {
+    display: block;
+}
+
+nav a {
+    color: #070606;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    transition: color 0.3s;
+    padding: 10px 20px;
+}
+
+nav a:hover {
+    color: #cf1616;
+}
+
+/* Welcome Screen */
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    text-align: center;
+}
+
+.center h1 {
+    margin-bottom: 20px;
+    color: black;
+    font-size: 36px;
+    text-align: justify;
+}
+
+.center button {
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    animation: float 2s infinite ease-in-out;
+    background-color: lawngreen;
+}
+
+/* Logo Section */
+.logo-container {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 15;
+}
+
+.logo-container img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    animation: float 2s infinite ease-in-out;
+}
+
+/* Dynamic Content Sections */
+#content {
+    background-size: cover;
+    background-position: center;
+    color:black;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+#content img {
+    width: 90%;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
+    margin: 20px 0;
+   padding: 0;
+    
+}
+
+.page {
+    display: none; /* Initially hidden */
+    color: black;
+    text-align: center;
+    align-items: center; /* Vertically align text and image */
+    padding: 50px;
+    margin: 20px 0; /* Add spacing between sections */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+
+}
+
+/* Sports Section */
+#sport {
+    background-color: #140101;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    line-height: 1.5;   /* Adjusts the space between lines */
+    margin-bottom: 10px; /* Adds spacing between paragraphs */
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+#sport img {
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
+    margin: 20px 0;
+   
+    
+}
+
+/* Music Section */
+#music {
+    background-color: bisque;
+    background-size: cover;
+    background-position: center;
+    color: black;
+    text-align: center;
+    line-height: 1.5;   /* Adjusts the space between lines */
+    margin-bottom: 10px; /* Adds spacing between paragraphs */
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#music img {
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
+    margin: 20px 0;
+}
+
+/* Food Section */
+#food {
+    background-color: indianred;
+    background-size: cover;
+    background-position: center;
+    color: black;
+    text-align: center;
+    line-height: 1.5;   /* Adjusts the space between lines */
+    margin-bottom: 10px; /* Adds spacing between paragraphs */
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#food img {
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
+    margin: 20px 0;
+}
+
+/* Keyframes for Float Animation */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
